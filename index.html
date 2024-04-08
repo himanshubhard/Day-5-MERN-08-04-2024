@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="info"></p>
+    <button onclick="openURL();">Open URL</button>
+    <!-- <button onmouseover="openURL();">Open URL</button> -->
+    <!-- <button onmouseout="openURL();">Open URL</button> -->
+    <button id="alert">Open Alert</button>
+    <button id="msg">Open Message</button>
+    <script>
+        function openURL(){
+            // window.open("https://www.google.com");
+            // document.location=("https://www.google.com");
+            // history.forward();h1>Hello
+            // document.getElementById("info").innerHTML=navigator.name;
+            console.log(event);
+        }
+        const alertButton=document.querySelector("#alert");
+        alertButton.onclick=()=>{
+            window.alert("Welcome ");
+        }
+        const msgButton=document.getElementsById("msg");
+        msgButton.addEventListinner("click",()=>{
+            alert("this is msg");
+        })
+    </script>
+</body>
+</html>
